@@ -1,0 +1,64 @@
+/* Project custom styles and overrides (Bootstrap is used for base styles) */
+
+body {
+  background: #ffffff;
+}
+
+/* Design tokens (plain CSS variables) */
+:root {
+  /* CSS HEX tokens (6-digit for broad support) */
+  --white: #fcfcfc;
+  --razzmatazz: #ed1d68;
+  --taupe-gray: #969096;
+  --black: #0a080e;
+  --platinum: #e9eaea;
+}
+
+/* Small helper classes to use tokens in templates without build changes */
+.text-razzmatazz {
+  color: var(--razzmatazz) !important;
+}
+.text-taupe-gray {
+  color: var(--taupe-gray) !important;
+}
+.text-platinum {
+  color: var(--platinum) !important;
+}
+.text-black {
+  color: var(--black) !important;
+}
+.text-white {
+  color: var(--white) !important;
+}
+
+.bg-razzmatazz {
+  background-color: var(--razzmatazz) !important;
+}
+.bg-taupe-gray {
+  background-color: var(--taupe-gray) !important;
+}
+.bg-platinum {
+  background-color: var(--platinum) !important;
+}
+.bg-black {
+  background-color: var(--black) !important;
+}
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.border-razzmatazz {
+  border-color: var(--razzmatazz) !important;
+}
+.border-taupe-gray {
+  border-color: var(--taupe-gray) !important;
+}
+.border-platinum {
+  border-color: var(--platinum) !important;
+}
+.border-black {
+  border-color: var(--black) !important;
+}
+.border-white {
+  border-color: var(--white) !important;
+}
