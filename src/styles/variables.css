@@ -5,4 +5,10 @@
   --taupe-gray: #969096ff;
   --black: #0a080eff;
   --platinum: #e9eaeaff;
+
+  /* Typography */
+  --font-body:
+    'Caveat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  /* keep only Rubik Glitch as the heading font */
+  --font-rubik-glitch: 'Rubik Glitch', var(--font-body);
 }

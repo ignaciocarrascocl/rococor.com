@@ -16,8 +16,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "roughjs": "^4.6.6",
+    "swiper": "^11.2.10",
     "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "vue3-zoom-drag": "^0.3.0",
+    "zoomist": "^2.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",

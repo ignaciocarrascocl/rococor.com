@@ -1,18 +1,57 @@
 /* Project custom styles and overrides (Bootstrap is used for base styles) */
+@import './styles/variables.css';
 
 body {
-  background: #ffffff;
+  background: var(--black);
+  color: var(--white);
 }
 
-/* Design tokens (plain CSS variables) */
-:root {
-  /* CSS HEX tokens (6-digit for broad support) */
-  --white: #fcfcfc;
-  --razzmatazz: #ed1d68;
-  --taupe-gray: #969096;
-  --black: #0a080e;
-  --platinum: #e9eaea;
+/* root app container should inherit the page background (avoid Bootstrap helpers overriding) */
+.app-root {
+  background: inherit;
+  color: inherit;
 }
+
+/* Make site text white by default and provide safe overrides for Bootstrap utilities */
+.app-root {
+  color: var(--white);
+}
+.app-root a {
+  color: var(--white);
+}
+
+/* keep muted text readable on dark background */
+.text-muted {
+  color: var(--platinum) !important;
+}
+
+/* utility that sometimes sets dark text (ensure it shows white instead) */
+.text-dark {
+  color: var(--white) !important;
+}
+
+/* Typography rules */
+html,
+body {
+  font-family: var(--font-body);
+}
+
+/* Assign requested fonts to heading levels */
+html {
+  font-size: 24px;
+} /* increase base size for better legibility */
+
+/* Use Rubik Glitch for all heading levels */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-rubik-glitch);
+}
+
+/* Design tokens moved to `src/styles/variables.css` (single source of truth) */
 
 /* Small helper classes to use tokens in templates without build changes */
 .text-razzmatazz {
